@@ -18,3 +18,5 @@ const trendingMovies = async (time_window) => {
 };
 
 module.exports = { trendingMovies };
+
+

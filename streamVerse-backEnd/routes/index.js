@@ -1,0 +1,1 @@
+https://www.animeparadise.moe/_next/data/P3ghZyCDYvSSHIAunGsFx/en/anime/Ore-Dake-Level-Up-na-Ken.json?id=Ore-Dake-Level-Up-na-Ken

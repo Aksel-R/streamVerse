@@ -3,12 +3,12 @@ const axios = require("axios");
 const apiKey = process.env.TMDB_API_KEY;
 const tmdbUrl = process.env.TMDB_URL;
 
-const searchMovie = async (query) => {
-    console.log(`${tmdbUrl}/search/movie?query=${query}&include_adult=false&language=en-US&page=1&api_key=${apiKey}`);
+const recommendationsMovies = async (Mid) => {
+    console.log("ssssssssssssssssssssssssssssssssssssssssssssssssss");
     
     try {
         // Making the API request using axios
-        const response = await axios.get(`${tmdbUrl}/search/movie?query=${query}&include_adult=false&language=en-US&page=1&api_key=${apiKey}`);
+        const response = await axios.get(`${tmdbUrl}/movie/${Mid}/recommendations?api_key=${apiKey}`);
         
         // Returning the result from the API request
         return response.data;
@@ -18,4 +18,4 @@ const searchMovie = async (query) => {
     }
 };
 
-module.exports = { searchMovie };
+module.exports = { recommendationsMovies };
