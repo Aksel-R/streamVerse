@@ -13,9 +13,14 @@ const urls = [
   EMBED_URL + "/embed/tv/"
 ].concat(vidsrcUrls);  // Merge vidsrcUrls dynamically
 
-console.log(urls);
+
 
 const streamAnimeEpisode = async (query, season, episode, name) => {
+
+  
+
+
+  
   try {
     console.log("Requesting stream...");
 
@@ -51,3 +56,5 @@ const streamAnimeEpisode = async (query, season, episode, name) => {
 };
 
 module.exports = { streamAnimeEpisode };
+
+

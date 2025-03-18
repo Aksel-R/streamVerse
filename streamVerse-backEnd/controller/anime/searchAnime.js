@@ -27,4 +27,19 @@ const searchAnime = async (query,pageN) => {
     }
 };
 
+// let body1 = `UserId=0&Language=AR&FilterType=SEARCH&FilterData=${name}&Type=SERIES&From=0&Token=8cnY80AZSbUCmR26Vku1VUUY4`;
+
+// let animefySearch = await axios.post(
+//   "https://animeify.net/animeify/apis_v4/anime/load_anime_list_v2.php", // Added missing URL
+//   body1,
+//   {
+//     headers: {
+//       "Content-Length": body1.length.toString(),
+//       "Content-Type": "application/x-www-form-urlencoded",
+//       "Expect": "100-continue",
+//       "Host": "animeify.net",
+//     },
+//   }
+// );
+
 module.exports = { searchAnime };
