@@ -14,6 +14,7 @@ const getAnimeEpisodes = require("./routes/anime/getAnimeEpisodes")
 const streamAnimeEpisodeRoute = require("./routes/anime/streamAnimeEpisode") 
 const searchAnimeAnimefy = require("./routes/anime/animefy/searchAnimefy")
 const StreamAnimeAnimefy = require("./routes/anime/animefy/streamAnime")
+const StreamAnimeParadise = require("./routes/anime/animeParadise/search")
 
 const app = express();
 
@@ -37,8 +38,9 @@ app.use('/anime/episodes', getAnimeEpisodes);
 app.use('/anime/episodes/stream', streamAnimeEpisodeRoute); 
 app.use('/anime/animefy', searchAnimeAnimefy); 
 app.use('/anime/animefy/stream', StreamAnimeAnimefy);
+app.use('/anime/animefy/stream', StreamAnimeAnimefy);
 
-app.use('/anime/latest', recentEpisodesRouter);
+app.use('/anime/paradise', StreamAnimeParadise);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
