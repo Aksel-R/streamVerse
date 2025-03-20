@@ -63,7 +63,7 @@ const WelcomeScreen = ({ constentType }) => {
                 status={buttonColor}
                 // accessoryLeft={PlayIcon} // Correctly pass the function
               >
-                {"STREAM " + constentType.toUpperCase() + " ?"}
+                {"STREAMs55555s " + constentType.toUpperCase() + " ?"}
               </Button>
             </View>
           </View>
